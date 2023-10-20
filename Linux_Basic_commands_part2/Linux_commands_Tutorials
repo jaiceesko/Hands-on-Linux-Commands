@@ -1,0 +1,72 @@
+# Linux Commands
+
+# usermod command
+# modify user account
+
+sudo usermod -aG admins sara
+
+sudo usermod -L joe
+
+sudo usermod -U joe
+
+sudo usermod joe -e 2023-12-31
+
+sudo usermod -l joegy joe
+
+sudo usermod -d /home/myhome --move-home sara
+
+
+
+# sudo command
+# execute a command as another user
+
+which sudo
+
+sudo su
+
+su -
+
+sudo su - sara
+
+sudo mkdir dir
+
+sudo adduser sheinfeld
+
+sudo apt update
+
+
+# htop utility command
+# monitoring processes and disk resources
+
+sudo apt update
+sudo apt install htop
+
+# in redhat distro
+sudo dnf install epel-release
+sudo dnf install htop
+
+htop
+
+
+# ps command
+# display running processes
+
+ps
+
+ps -aux
+
+ps --pid 17726
+
+ps -He
+
+ps -axjf
+
+ps -U joe -u joe u
+
+ps -U root -u root u
+
+
+# Data Streams (stdin,stdout & stderr)
+
+
+

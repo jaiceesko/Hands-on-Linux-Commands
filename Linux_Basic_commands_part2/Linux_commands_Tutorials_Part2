@@ -1,0 +1,120 @@
+### LINUX COMMANDS
+
+
+### User Account and Password Expiration
+
+# To set an expiration date to user account
+
+sudo chage -E 2024-02-29 neo
+
+sudo chage -E 2024-01-31 trinity
+
+# Detail of user account password information
+
+sudo chage -l neo
+
+
+# To set maximum numbers of days during which a password is valid
+
+sudo chage -M 60 trinity
+
+sudo chage -M 90 neo
+
+
+# To set a minimum number of days between password changes
+
+sudo chage -m 90 trinity
+
+sudo chage -m 90 neo
+
+
+# To lock a user account
+
+sudo passwd -l neo
+
+# To unlock a user account
+
+sudo passwd -u neo
+
+
+
+### Background (bg) and Foreground (fg)
+
+# Foreground
+
+sudo apt update
+
+sudo apt install apache2
+
+# Background
+
+sudo apt install htop &
+
+vim test.txt &
+
+fg <job_id>
+
+fg htop
+
+# To see list of jobs running in the background
+
+jobs
+
+
+
+### Bash Aliases
+
+alias l="ls -la"
+
+alias c=clear
+
+alias myhome=/home/joe
+
+alias df="sudo df -h"
+
+alias du="sudo du -h"
+
+alias lsmount="mount | column -t"
+
+alias install="sudo apt install"
+
+alias upgrade="sudo apt update && sudo apt dist-upgrade"
+
+# To list aliases
+
+alias
+ 
+# delete aliases
+
+unalias l
+
+unalias myhome
+
+# add the aliases to .bashrc file in your home directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

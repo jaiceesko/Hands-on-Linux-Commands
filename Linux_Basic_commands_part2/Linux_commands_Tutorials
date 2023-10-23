@@ -1,6 +1,6 @@
-# Linux Commands
+### Linux Commands
 
-# usermod command
+### usermod command
 # modify user account
 
 sudo usermod -aG admins sara
@@ -17,7 +17,7 @@ sudo usermod -d /home/myhome --move-home sara
 
 
 
-# sudo command
+### sudo command
 # execute a command as another user
 
 which sudo
@@ -35,7 +35,7 @@ sudo adduser sheinfeld
 sudo apt update
 
 
-# htop utility command
+### htop utility command
 # monitoring processes and disk resources
 
 sudo apt update
@@ -48,7 +48,7 @@ sudo dnf install htop
 htop
 
 
-# ps command
+### ps command
 # display running processes
 
 ps
@@ -66,7 +66,29 @@ ps -U joe -u joe u
 ps -U root -u root u
 
 
-# Data Streams (stdin,stdout & stderr)
+### Data Streams (stdin,stdout & stderr)
+
+# stdin
+ls
+
+echo "Hello World"
+
+sudo apt update
+
+# redirect stdout
+
+docker &> docker_commands
+
+echo "Hello World" > happy.txt
+
+cat docker_commands >> happy.txt
+
+# redirect stderr
+
+apt update 2> /dev/null
+
+find /etc -type f 1> ~/results.txt 2> ~/ errors.txt
+
 
 
 

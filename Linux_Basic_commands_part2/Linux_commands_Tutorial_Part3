@@ -2,3 +2,27 @@
 
 ### Public Key Authentication
 
+# Check if ssh client is installed
+
+which ssh
+
+# Generate or create ssh key-pair
+
+ssh-keygen -b 4096
+
+ls -la ~/.ssh
+
+# Remote access
+
+ssh server1@172.100.65.24
+
+# Copying the public key to your server
+ssh-copy-id server1@172.100.65.24
+
+
+
+### Scheduling Tasks with Cron
+
+crontab -l
+
+# edit cron jobs
